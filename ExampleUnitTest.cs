@@ -1,20 +1,21 @@
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using Xunit;
 
 namespace DebugTeamCityTestReporting
 {
+    [TestClass]
     public class ExampleUnitTest
     {
-        [Fact]
+        [TestMethod]
         public void PassingTest()
         {
-            Assert.True(true, "example passing test");
+            Assert.IsTrue(true, "example passing test");
         }
 
-        [Fact]
+        [TestMethod]
         public void AnotherPassingTest()
         {
-            Assert.False(false, "another passing test");
+            Assert.IsFalse(false, "another passing test");
         }
 
         /*
