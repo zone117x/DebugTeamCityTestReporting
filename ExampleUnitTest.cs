@@ -12,9 +12,17 @@ namespace DebugTeamCityTestReporting
         }
 
         [Fact]
+        public void AnotherPassingTest()
+        {
+            Assert.False(false, "another passing test");
+        }
+
+        /*
+        [Fact]
         public void FailingTest()
         {
             Assert.True(false, "example failing test");
         }
+        */
     }
 }
